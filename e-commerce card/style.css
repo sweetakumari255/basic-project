@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: #001422;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* ---------- Layout ---------- */
+  .card-container {
+    position: relative;
+    width: 380px;
+  }
+  
+  /* ---------- Background Circles ---------- */
+  .circle {
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    filter: blur(5px);
+    z-index: 1;
+  }
+  
+  .circle-1 {
+    top: -40px;
+    left: -40px;
+    background: radial-gradient(cyan 0%, transparent 40%, salmon 70%);
+  }
+  
+  .circle-2 {
+    top: 120px;
+    right: -60px;
+    background: radial-gradient(#00ffd5 0%, transparent 40%, #ff7a7a 70%);
+  }
+  
+  .circle-3 {
+    bottom: -50px;
+    left: 80px;
+    background: radial-gradient(#5cffb0 0%, transparent 40%, #ffb86c 70%);
+  }
+  
+  /* ---------- Glass Card ---------- */
+  .card {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  /* ---------- Image ---------- */
+  .card-image {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 15px;
+  }
+  
+  /* ---------- Text ---------- */
+  .tag {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .card-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .card-subtitle {
+    color: #cfd8dc;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  /* ---------- Rating ---------- */
+  .star-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  
+  .star-rating img {
+    height: 16px;
+  }
+  
+  /* ---------- Button ---------- */
+  .card-button {
+    width: 100%;
+    background: linear-gradient(135deg, #00ffd5, #ff7a7a);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .card-button img {
+    height: 18px;
+  }
+  
